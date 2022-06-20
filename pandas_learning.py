@@ -1,3 +1,4 @@
+from lib2to3.pgen2.pgen import DFAState
 import pandas as pd
 import numpy as np
 
@@ -14,4 +15,8 @@ tabB_df=pd.DataFrame(data=tabB)
 
 tabJoin_df=tabA_df.merge(tabB_df,how='cross')
 
-print(tabJoin_df)
+#print(tabJoin_df)
+
+for col,row in tabA_df.items():
+    print(row)
+    print(col)
