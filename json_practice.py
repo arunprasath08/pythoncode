@@ -21,12 +21,15 @@ json={
 ##
 ##'''Access third level nodes'''
 ##
-##for node in json['bpi']['USD']:
-##    if node=='rate':
-##        print(node,':',json['bpi']['USD'][node])
+for node in json['bpi']['USD']:
+    if node=='rate':
+        print(node,':',json['bpi']['USD'][node])
 
-for lev1_node in json:
-    for lev2_node in json[lev1_node]:
-        print(lev2_node)
-        #for lev3_node in json[lev2_node]:
+##for lev1_node in json:
+##    for lev2_node in json['bpi']:
+##        print(lev2_node,end='')
+##        for lev3_node in json['bpi']['USD']:
+##            if lev3_node=='rate':
+##                print(json[lev1_node][lev2_node][lev3_node])
+            
             
